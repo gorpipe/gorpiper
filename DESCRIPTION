@@ -5,7 +5,7 @@ Version: 1.0.0
 Authors@R: c(
     person("Genuity", "Science", role = c("cph"), email = "support@genuitysci.com"),
     person("Andri", "Stefansson", role = c("aut", "cre"), email = "andri@genuitysci.com"),
-    person("Edvald", "Gislason", role = "ctb", email = "")
+    person("Edvald", "Gislason", role = "ctb", email = "edvaldig@gmail.com")
     )
 Description: R library for executing GOR queries using local GORpipe.
 License: LGPL (>= 3)
