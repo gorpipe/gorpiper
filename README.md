@@ -33,7 +33,7 @@ If gorpipe has been added to path we can access the path to gorpipe's bininary f
 
 
 ``` r
-gorpipe_path <- system("which gorpipe")
+gorpipe_path <- Sys.which("gorpipe")
 ```
 
 else, we need to set it manually.
