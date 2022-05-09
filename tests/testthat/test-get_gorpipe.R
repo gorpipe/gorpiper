@@ -1,6 +1,8 @@
+# For get_gorpipe to work - gorpipe has to be added to PATH
 test_that("get_gorpipe works", {
-    #user_dir = "/Users/tests/"
-    #available_gorscripts = grep("gorscripts*", list.dirs(user_dir, recursive=F) ,value=T)
-    #gorpipe <- get_gorpipe("~/Users/tests/gorscripts")
-    #df <- gorpipe("GORROWS -p chr1:0-10")
+    gorpipe_path <- system("which gorpipe", intern=T)
+    skip_if(!is.null(attr(gorpipe_path, "status"))) # gorpipe not added to PATH
+    gorpipe <- get_gorpipe(gorpipe_path)
+    df <- gorpipe("GORROWS -p chr1:0-10")
+    expect_equal(nrow(df), 10)
 })
