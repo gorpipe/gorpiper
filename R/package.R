@@ -17,36 +17,29 @@
 # usethis::use_vignette("basic-gorpipe")
 
 
-#'   gorpipe-r
+#' gorpipe-r
 #'
-#' @description R library for interfacing with Genuity Science services.
+#' @description R library for executing GOR queries using local GORpipe and loading data into R.
 #' @docType package
 #' @name gorpiper
 #' @section gorpipe-r functions:
 #' The main function you'll be using is:
-#' * \code{\link{get_gorpipe}} to establish a connection to your Genuity Science APIs, and
+#' * \code{\link{get_gorpipe}} to set up a gorpipe object for executing GOR queries from R
 #' @examples
 #' \dontrun{
 #' library(gorpiper)
-#' # Go to your CSA instance of choice that runs the Query API, e.g.
-#' # https://your-wxnc-instance
-#' # Note the internal names of the projects you have access to
-#' # go to and copy your api_key from: https://your-wxnc-instance/api-key-service/token
-#' # Paste it into the variable below:
+#' 
+#' full path to gorpipe, e.g. 
+#' path <- "~/User/gor-scripts/bin/gorpipe"
 #'
-#' path <- "~/User/gorscripts<version>-dist/bin"
-#'
-#' # Make connection object
-#' gorpipe <- get_gorpipe(api_key, "your_project")
-#'
-#' # Print the connection details
-#' print(conn)
+#' # Make gorpipe object
+#' gorpipe <- get_gorpipe(path)
 #'
 #' # Run a simple query
 #'
-#' results <- gor_query("gor #dbsnp# | top 10000", conn)
+#' results <- gorpipe("gor #dbsnp# | top 10000")
 #'
-#' print(results)
+#' results
 #' }
 NULL
 
