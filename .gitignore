@@ -10,3 +10,5 @@ testscript.R
 pkgdown
 .lintr
 *.Rproj
+
+/.vscode

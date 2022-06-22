@@ -1,7 +1,7 @@
 Package: gorpiper
 Type: Package
 Title: GORpipe Tool for R
-Version: 1.0.0
+Version: 1.0.1
 Authors@R: c(
     person("Genuity", "Science", role = c("cph"), email = "support@genuitysci.com"),
     person("Andri", "Stefansson", role = c("aut", "cre"), email = "andri@genuitysci.com"),
