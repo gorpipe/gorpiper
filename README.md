@@ -31,7 +31,7 @@ require(gorpiper)
 
 ### Set path to gorpipe's binary file
 
-For ease of use we recommend adding gorpipe to path. If gorpipe has been added to path we can access the path to gorpipe's bininary file using
+For ease of use we recommend adding gorpipe to path. If gorpipe has been added to path we can access the path to gorpipe's binary file using
 
 ``` r
 gorpipe_path <- Sys.which("gorpipe")
